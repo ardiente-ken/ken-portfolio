@@ -39,7 +39,7 @@ function SocialIcon({ label }: { label: string }) {
 // PDF Icon SVG Component
 function PdfIcon() {
   return (
-    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+    <svg className="w-4 h-4 transition-transform group-hover:-translate-y-0.5" fill="currentColor" viewBox="0 0 24 24">
       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9.5v-2H8v2H6.5V8H9c.83 0 1.5.67 1.5 1.5v2c0 .83-.67 1.5-1.5 1.5h-.5v1H11v2zm-.5-5H8V9.5h1.5V11zM17.5 9.5c0-.83-.67-1.5-1.5-1.5H13v8h1.5v-3H16c.83 0 1.5-.67 1.5-1.5v-2zm-3 2V9.5H16V11.5h-1.5z" />
     </svg>
   );
@@ -70,7 +70,7 @@ export default function Hero({
           <div className="max-w-2xl flex-1">
             <p className="font-mono text-[13px] text-ink-soft mb-6">
               {"//"} {profile.location || "location unset"}
-              <span className="code-punct">,</span> <span className="code-string">available for work</span>
+              <span className="code-punct">,</span> <span className="code-string">available for projects btw hehe</span>
             </p>
 
             <h1 className="font-display font-semibold text-[2.25rem] leading-[1.15] sm:text-5xl sm:leading-[1.1]">
@@ -93,7 +93,7 @@ export default function Hero({
         </div>
 
         <div className="max-w-5xl px-6 lg:px-16">
-          <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 font-mono text-[13px]">
+          <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4 font-mono text-[13px]">
             {/* Email with mail icon */}
             {profile.email && (
               <a
@@ -121,16 +121,16 @@ export default function Hero({
               </a>
             ))}
 
-            {/* Résumé link handling open/save PDF */}
+            {/* Standout Résumé Button */}
             {profile.resumeUrl && (
               <a
                 href={profile.resumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-ink-soft hover:text-blue transition-colors"
+                className="group inline-flex items-center gap-2 px-3.5 py-1.5 rounded-md bg-blue/10 text-blue border border-blue/20 hover:bg-blue hover:text-white hover:border-blue transition-all duration-200 shadow-sm"
               >
                 <PdfIcon />
-                <span>Résumé</span>
+                <span className="font-medium">Here's my resume!!</span>
               </a>
             )}
           </div>

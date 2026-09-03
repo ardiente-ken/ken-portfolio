@@ -1,6 +1,7 @@
 import { readDb } from "@/lib/db";
 import Sidebar from "@/components/site/Sidebar";
 import Hero from "@/components/site/Hero";
+import Experience from "@/components/site/Experience";
 import Projects from "@/components/site/Projects";
 
 export const dynamic = "force-dynamic";
@@ -13,7 +14,22 @@ export default function Home() {
       <Sidebar name={db.profile.name} />
       <main className="flex-1 min-w-0">
         <Hero profile={db.profile} techStacks={db.techStacks} />
-        <Projects projects={db.projects} techStacks={db.techStacks} />
+        
+        {/* Pulls Projects section up closer to Hero */}
+        <div className="-mt-8 lg:-mt-14">
+          <Projects projects={db.projects} techStacks={db.techStacks} />
+        </div>
+        
+        <div className="px-6 lg:px-16">
+          <div className="w-full border-t border-line" />
+        </div>
+        
+        {db.experiences && (
+          <div className="-mt-12 lg:-mt-16">
+            <Experience experiences={db.experiences} />
+          </div>
+        )}
+
         <footer className="px-6 lg:px-16 py-10 flex items-center justify-between font-mono text-[11px] text-ink-soft">
           <span>&copy; {new Date().getFullYear()} {db.profile.name}</span>
         </footer>

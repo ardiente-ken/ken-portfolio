@@ -37,4 +37,15 @@ export type Database = {
   profile: Profile;
   techStacks: TechStackItem[];
   projects: Project[];
+  experiences?: ExperienceItem[];
+};
+
+// Add to lib/types.ts
+export type ExperienceItem = {
+  company: string;
+  role: string;
+  period: string; // e.g. "Jun 2025 — Present"
+  location?: string;
+  description: string[];
+  techStack?: string[];
 };

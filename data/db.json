@@ -147,133 +147,198 @@
     }
   ],
   "projects": [
-  {
-    "id": "p1",
-    "title": "AKN — Official Artist Website",
-    "description": "A dynamic portfolio and web presence for music artist AKN featuring discography showcases, upcoming events, biographical highlights, and contact forms. Integrated with a secure Supabase admin dashboard that enables real-time content, track, and site configuration updates without code deployments.",
-    "techStack": [
-      "ts10",
-      "ts21"
-    ],
-    "liveUrl": "https://akn-artist-website.vercel.app/",
-    "githubUrl": "",
-    "images": [
-      "/uploads/akn_website/akn_home.png",
-      "/uploads/akn_website/akn_shows.png",
-      "/uploads/akn_website/akn_gallery.png",
-      "/uploads/akn_website/akn_videos.png",
-      "/uploads/akn_website/akn_about.png",
-      "/uploads/akn_website/akn_admin.png",
-      "/uploads/akn_website/akn_admingallery.png"
-    ],
-    "order": 1
-  },
-  {
-    "id": "p2",
-    "title": "MCF WMS Android",
-    "description": "An enterprise warehouse management application optimized for mobile workstations. Streamlines inventory tracking, stock movements, and logistics processing through integrated backend services.",
-    "techStack": [
-      "ts4",
-      "ts14",
-      "ts17",
-      "ts23"
-    ],
-    "liveUrl": "",
-    "githubUrl": "",
-    "images": [
-      "/uploads/mcf_wms_android/android_login.png",
-      "/uploads/mcf_wms_android/android_menu.png",
-      "/uploads/mcf_wms_android/android_settings.png",
-      "/uploads/mcf_wms_android/android_issuance.png",
-      "/uploads/mcf_wms_android/android_inventory.png"
-    ],
-    "order": 2
-  },
-  {
-    "id": "p3",
-    "title": "MCF WMS Handheld (Keyence BT-W85G)",
-    "description": "A handheld terminal application built on legacy framework infrastructure to manage on-the-floor warehouse transactions, streamline barcode scanning, and handle low-latency API sync for real-time inventory updates.",
-    "techStack": [
-      "ts17",
-      "ts24",
-      "ts25"
-    ],
-    "liveUrl": "",
-    "githubUrl": "",
-    "images": [
-      "/uploads/mcf_wms_handheld/handheld_login.png",
-      "/uploads/mcf_wms_handheld/handheld_menu.png",
-      "/uploads/mcf_wms_handheld/handheld_barcodemanagement.png",
-      "/uploads/mcf_wms_handheld/handheld_locatortagging.png",
-      "/uploads/mcf_wms_handheld/handheld_issuance.png"
-    ],
-    "order": 3
-  },
-  {
-    "id": "p4",
-    "title": "Empathease — Web Platform",
-    "description": "The web portal for Empathease providing mental health providers and users with a desktop-optimized booking workflow, provider schedules, support service directory management, and administrative control panels.",
-    "techStack": [
-      "ts10",
-      "ts12",
-      "ts13",
-      "ts22"
-    ],
-    "liveUrl": "",
-    "githubUrl": "",
-    "images": [
-      "/uploads/empathease/web_login.png",
-      "/uploads/empathease/web_home_bic.png",
-      "/uploads/empathease/web_mhsc_providers.png",
-      "/uploads/empathease/web_professional.png",
-      "/uploads/empathease/web_support_service_list.png",
-      "/uploads/empathease/web_booking.png"
-    ],
-    "order": 4
-  },
-  {
-    "id": "p5",
-    "title": "Empathease — Android Application",
-    "description": "A cross-platform mobile app connecting users directly with mental health professionals. Features appointment scheduling, secure real-time messaging, resource library access, an OpenAI FAQ chatbot, and a Python-powered machine learning questionnaire system for personalized therapist recommendations.",
-    "techStack": [
-      "ts5",
-      "ts13",
-      "ts22",
-      "ts3"
-    ],
-    "liveUrl": "",
-    "githubUrl": "",
-    "images": [
-      "/uploads/empathease/android_landing.png",
-      "/uploads/empathease/android_login.png",
-      "/uploads/empathease/android_home.png",
-      "/uploads/empathease/android_appointment.png",
-      "/uploads/empathease/android_machine_learning_recommendations.png"
-    ],
-    "order": 5
-  },
-  {
-  "id": "p6",
-  "title": "Eskwelabuy - Android Application",
-  "description": "A specialized mobile marketplace application tailored for students and educators to buy, sell, and exchange school supplies, textbooks, and academic materials seamlessly. Built with Kotlin on the frontend and a robust PHP Laravel RESTful API backend.",
-  "techStack": [
-    "ts5",
-    "ts6",
-    "ts19",
-    "ts26"
+    {
+      "id": "p1",
+      "title": "AKN — Official Artist Website",
+      "description": "A dynamic portfolio and web presence for music artist AKN featuring discography showcases, upcoming events, biographical highlights, and contact forms. Integrated with a secure Supabase admin dashboard that enables real-time content, track, and site configuration updates without code deployments.",
+      "techStack": [
+        "ts10",
+        "ts21"
+      ],
+      "liveUrl": "https://akn-artist-website.vercel.app/",
+      "githubUrl": "",
+      "images": [
+        "/uploads/akn_website/akn_home.png",
+        "/uploads/akn_website/akn_shows.png",
+        "/uploads/akn_website/akn_gallery.png",
+        "/uploads/akn_website/akn_videos.png",
+        "/uploads/akn_website/akn_about.png",
+        "/uploads/akn_website/akn_admin.png",
+        "/uploads/akn_website/akn_admingallery.png"
+      ],
+      "order": 1
+    },
+    {
+      "id": "p2",
+      "title": "MCF WMS Android",
+      "description": "An enterprise warehouse management application optimized for mobile workstations. Streamlines inventory tracking, stock movements, and logistics processing through integrated backend services.",
+      "techStack": [
+        "ts4",
+        "ts14",
+        "ts17",
+        "ts23"
+      ],
+      "liveUrl": "",
+      "githubUrl": "",
+      "images": [
+        "/uploads/mcf_wms_android/android_login.png",
+        "/uploads/mcf_wms_android/android_menu.png",
+        "/uploads/mcf_wms_android/android_settings.png",
+        "/uploads/mcf_wms_android/android_issuance.png",
+        "/uploads/mcf_wms_android/android_inventory.png"
+      ],
+      "order": 2
+    },
+    {
+      "id": "p3",
+      "title": "MCF WMS Handheld (Keyence BT-W85G)",
+      "description": "A handheld terminal application built on legacy framework infrastructure to manage on-the-floor warehouse transactions, streamline barcode scanning, and handle low-latency API sync for real-time inventory updates.",
+      "techStack": [
+        "ts17",
+        "ts24",
+        "ts25"
+      ],
+      "liveUrl": "",
+      "githubUrl": "",
+      "images": [
+        "/uploads/mcf_wms_handheld/handheld_login.png",
+        "/uploads/mcf_wms_handheld/handheld_menu.png",
+        "/uploads/mcf_wms_handheld/handheld_barcodemanagement.png",
+        "/uploads/mcf_wms_handheld/handheld_locatortagging.png",
+        "/uploads/mcf_wms_handheld/handheld_issuance.png"
+      ],
+      "order": 3
+    },
+    {
+      "id": "p4",
+      "title": "Empathease — Web Platform",
+      "description": "The web portal for Empathease providing mental health providers and users with a desktop-optimized booking workflow, provider schedules, support service directory management, and administrative control panels.",
+      "techStack": [
+        "ts10",
+        "ts12",
+        "ts13",
+        "ts22"
+      ],
+      "liveUrl": "",
+      "githubUrl": "",
+      "images": [
+        "/uploads/empathease/web_login.png",
+        "/uploads/empathease/web_home_bic.png",
+        "/uploads/empathease/web_mhsc_providers.png",
+        "/uploads/empathease/web_professional.png",
+        "/uploads/empathease/web_support_service_list.png",
+        "/uploads/empathease/web_booking.png"
+      ],
+      "order": 4
+    },
+    {
+      "id": "p5",
+      "title": "Empathease — Android Application",
+      "description": "A cross-platform mobile app connecting users directly with mental health professionals. Features appointment scheduling, secure real-time messaging, resource library access, an OpenAI FAQ chatbot, and a Python-powered machine learning questionnaire system for personalized therapist recommendations.",
+      "techStack": [
+        "ts5",
+        "ts13",
+        "ts22",
+        "ts3"
+      ],
+      "liveUrl": "",
+      "githubUrl": "",
+      "images": [
+        "/uploads/empathease/android_landing.png",
+        "/uploads/empathease/android_login.png",
+        "/uploads/empathease/android_home.png",
+        "/uploads/empathease/android_appointment.png",
+        "/uploads/empathease/android_machine_learning_recommendations.png"
+      ],
+      "order": 5
+    },
+    {
+      "id": "p6",
+      "title": "Eskwelabuy - Android Application",
+      "description": "A specialized mobile marketplace application tailored for students and educators to buy, sell, and exchange school supplies, textbooks, and academic materials seamlessly. Built with Kotlin on the frontend and a robust PHP Laravel RESTful API backend.",
+      "techStack": [
+        "ts5",
+        "ts6",
+        "ts19"
+      ],
+      "liveUrl": "",
+      "githubUrl": "",
+      "images": [
+        "/uploads/eskwelabuy/eskwelabuy_landing.png",
+        "/uploads/eskwelabuy/eskwelabuy_login.png",
+        "/uploads/eskwelabuy/eskwelabuy_dashboard.png",
+        "/uploads/eskwelabuy/eskwelabuy_orders.png",
+        "/uploads/eskwelabuy/eskwelabuy_profile.png",
+        "/uploads/eskwelabuy/eskwelabuy_sellerdashboard.png",
+        "/uploads/eskwelabuy/eskwelabuy_notifications.png"
+      ],
+      "order": 6
+    },
+    {
+      "id": "p7",
+      "title": "Itinerawise - Android Application",
+      "description": "A travel planning application that allows users to create, share, and discover personalized itineraries. Built with Kotlin on the frontend and NodeJS RESTful API backend connected to MongoDB for data storage and retrieval.",
+      "techStack": [
+        "ts5",
+        "ts13",
+        "ts20"
+      ],
+      "liveUrl": "",
+      "githubUrl": "",
+      "images": [
+        "/uploads/itinerawise/itinerawise_login.png",
+        "/uploads/itinerawise/itinerawise_dashboard.png",
+        "/uploads/itinerawise/itinerawise_detail.png",
+        "/uploads/itinerawise/itinerawise_maps.png",
+        "/uploads/itinerawise/itinerawise_itinerary.png"
+      ],
+      "order": 7
+    }
   ],
-  "liveUrl": "",
-  "githubUrl": "",
-  "images": [
-    "/uploads/eskwelabuy/eskwelabuy_landing.png",
-    "/uploads/eskwelabuy/eskwelabuy_login.png",
-    "/uploads/eskwelabuy/eskwelabuy_dashboard.png",
-    "/uploads/eskwelabuy/eskwelabuy_orders.png",
-    "/uploads/eskwelabuy/eskwelabuy_profile.png",
-    "/uploads/eskwelabuy/eskwelabuy_sellerdashboard.png",
-    "/uploads/eskwelabuy/eskwelabuy_notifications.png"
-  ],
-  "order": 6
-}
-]
+  "experiences": [
+    {
+      "company": "NPAX - Cebu Corporation",
+      "role": "Software Engineer",
+      "period": "Jun 2025 — Present",
+      "location": "Mandaue City, Cebu, Philippines",
+      "description": [
+        "Designed and deployed enterprise-grade applications using C#, ASP.NET, Java, and MSSQL, architecting scalable system solutions and seamless integration between handheld devices and web-based systems.",
+        "Resolved complex software and system issues through structured troubleshooting across C#, AngularJS, and Node-RED environments to ensure operational stability.",
+        "Refactored legacy codebases and developed new modules in C# and ASP.NET to improve application efficiency and maintainability.",
+        "Developed Grafana dashboards and reporting tools to monitor system performance and support data-driven decision-making.",
+        "Handled deployment, configuration, and client training to ensure smooth system adoption.",
+        "Maintained and enhanced Android applications using Java and Android SDK, modernizing UI, integrating RESTful APIs, and resolving system bugs."
+      ],
+      "techStack": [
+        "C#",
+        "ASP.NET",
+        "Java",
+        "Android SDK",
+        "MSSQL",
+        "AngularJS",
+        "Node-RED",
+        "Grafana",
+        "REST API",
+        "Flutter",
+        "Dart"
+      ]
+    },
+    {
+      "company": "NPAX - Cebu Corporation",
+      "role": "Software Engineer Intern",
+      "period": "Jan 2025 — May 2025",
+      "location": "Mandaue City, Cebu, Philippines",
+      "description": [
+        "Developed full-stack modules for NXPERT EON using AngularJS and Node-RED, supporting real-time production tracking.",
+        "Contributed to IoT-integrated workflows for manufacturing systems to ensure accurate data capture.",
+        "Assisted in debugging, testing, and improving system functionality across MPR, DPR, Pallet Loading, and Layout modules."
+      ],
+      "techStack": [
+        "AngularJS",
+        "Node-RED",
+        "IoT",
+        "JavaScript"
+      ]
+    }
+  ]
 }
