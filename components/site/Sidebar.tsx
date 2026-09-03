@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import ThemeToggle from "./ThemeToggle";
 
 const SECTIONS = [
   { id: "intro", label: "Intro", num: "01" },
@@ -41,7 +40,6 @@ export default function Sidebar({ name }: { name: string }) {
             <span className="code-punct">{"//"}</span> developer index
           </p>
         </div>
-        <ThemeToggle className="lg:hidden" />
       </div>
 
       <nav className="hidden lg:flex flex-col gap-1 mt-10">
