@@ -94,11 +94,12 @@ export default function ProjectCard({
 
   return (
     <>
-      <article className="flex flex-col border border-line bg-paper text-xs overflow-hidden w-full">
-        {/* 1. IMAGES (Top Section - Always uses cardImage / first pic) */}
+      {/* h-full allows the card to automatically match the tallest card in the grid row */}
+      <article className="flex flex-col border border-line bg-paper text-xs overflow-hidden w-full h-full">
+        {/* 1. IMAGES (Top Section - Fixed aspect ratio & shrink-0) */}
         <div
           onClick={handleOpenModal}
-          className={`relative w-full aspect-[16/9] bg-neutral-900 overflow-hidden group border-b border-line flex items-center justify-center ${
+          className={`relative w-full aspect-[16/9] shrink-0 bg-neutral-900 overflow-hidden group border-b border-line flex items-center justify-center ${
             hasImages ? "cursor-pointer" : ""
           }`}
         >
@@ -132,25 +133,27 @@ export default function ProjectCard({
           )}
         </div>
 
-        {/* CONTENT BODY */}
-        <div className="flex flex-col p-5 md:p-6 gap-4">
-          {/* 2. PROJECT TITLE */}
-          <div className="flex items-baseline justify-between gap-3 border-b border-line/30 pb-2.5">
-            <h3 className="font-display font-semibold text-lg md:text-xl text-ink">
-              {project.title}
-            </h3>
-            <span className="font-mono text-xs text-ink-soft shrink-0">
-              fig. {String(index + 1).padStart(2, "0")}
-            </span>
+        {/* CONTENT BODY - flex-1 pushes bottom section while keeping all text rendered */}
+        <div className="flex flex-col flex-1 p-5 md:p-6 gap-4 justify-between">
+          <div className="flex flex-col gap-4">
+            {/* 2. PROJECT TITLE */}
+            <div className="flex items-baseline justify-between gap-3 border-b border-line/30 pb-2.5">
+              <h3 className="font-display font-semibold text-lg md:text-xl text-ink">
+                {project.title}
+              </h3>
+              <span className="font-mono text-xs text-ink-soft shrink-0">
+                fig. {String(index + 1).padStart(2, "0")}
+              </span>
+            </div>
+
+            {/* 3. DESCRIPTION (Renders in full) */}
+            <p className="text-xs md:text-sm text-ink-soft leading-relaxed whitespace-pre-line">
+              {project.description}
+            </p>
           </div>
 
-          {/* 3. DESCRIPTION */}
-          <p className="text-xs md:text-sm text-ink-soft leading-relaxed whitespace-pre-line">
-            {project.description}
-          </p>
-
-          {/* 4. TECH STACK & LINKS */}
-          <div className="pt-4 border-t border-line/40 flex flex-wrap items-center justify-between gap-4">
+          {/* 4. TECH STACK & LINKS - Aligned at the bottom across all cards */}
+          <div className="pt-4 border-t border-line/40 flex flex-wrap items-center justify-between gap-4 mt-auto">
             {tags.length > 0 && (
               <ul className="flex flex-wrap gap-1.5">
                 {tags.map((t) => (
