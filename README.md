@@ -1,6 +1,6 @@
 # Developer Portfolio
 
-A single-page developer portfolio built with Next.js (App Router), TypeScript, and Tailwind CSS. The application is driven by a local JSON data structure (`data/db.json`) for straightforward content updates.
+A single-page developer portfolio built with Next.js (App Router), TypeScript, and Tailwind CSS. 
 
 ## Overview & Key Features
 
