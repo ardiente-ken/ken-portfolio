@@ -2,12 +2,12 @@
   "profile": {
     "name": "Ken Angelo Ardiente",
     "role": "Full-Stack Developer",
-    "tagline": "I build fast, reliable software from database to pixel.",
-    "bio": "I'm a full-stack developer who likes taking a product from a rough sketch to something people actually use. Most of my work lives at the intersection of clean APIs and interfaces that don't get in the way. When I'm not shipping features, I'm probably reading about distributed systems or tinkering with a side project that will never see daylight.",
+    "tagline": "Full-stack engineer crafting end-to-end software solutions.",
+    "bio": "Full-Stack Developer turning ideas into production-ready software. Experienced in crafting resilient backends, RESTful APIs, and cross-platform clients.",
     "location": "Cebu City, Philippines",
     "email": "kenangeloardiente@gmail.com",
-    "avatar": "",
-    "resumeUrl": "",
+    "avatar": "/uploads/avatar/avatar.jpg",
+    "resumeUrl": "/uploads/resume/resume.pdf",
     "socials": [
       {
         "label": "GitHub",
@@ -20,120 +20,197 @@
     ]
   },
   "techStacks": [
-  {
-    "id": "ts1",
-    "name": "TypeScript",
-    "category": "Language"
-  },
-  {
-    "id": "ts2",
-    "name": "JavaScript",
-    "category": "Language"
-  },
-  {
-    "id": "ts3",
-    "name": "Python",
-    "category": "Language"
-  },
-  {
-    "id": "ts4",
-    "name": "C#",
-    "category": "Language"
-  },
-  {
-    "id": "ts5",
-    "name": "Kotlin",
-    "category": "Language"
-  },
-  {
-    "id": "ts6",
-    "name": "PHP",
-    "category": "Language"
-  },
-  {
-    "id": "ts7",
-    "name": "VBA",
-    "category": "Language"
-  },
-  {
-    "id": "ts8",
-    "name": "HTML5",
-    "category": "Frontend"
-  },
-  {
-    "id": "ts9",
-    "name": "CSS3",
-    "category": "Frontend"
-  },
-  {
-    "id": "ts10",
-    "name": "React",
-    "category": "Frontend"
-  },
-  {
-    "id": "ts11",
-    "name": "Next.js",
-    "category": "Frontend"
-  },
-  {
-    "id": "ts12",
-    "name": "Tailwind CSS",
-    "category": "Frontend"
-  },
-  {
-    "id": "ts13",
-    "name": "Node.js",
-    "category": "Backend"
-  },
-  {
-    "id": "ts14",
-    "name": "ASP.NET Core",
-    "category": "Backend"
-  },
-  {
-    "id": "ts15",
-    "name": "REST API",
-    "category": "Backend"
-  },
-  {
-    "id": "ts16",
-    "name": "Node-RED",
-    "category": "Backend"
-  },
-  {
-    "id": "ts17",
-    "name": "PostgreSQL",
-    "category": "Database"
-  },
-  {
-    "id": "ts18",
-    "name": "MSSQL",
-    "category": "Database"
-  },
-  {
-    "id": "ts19",
-    "name": "MySQL",
-    "category": "Database"
-  },
-  {
-    "id": "ts20",
-    "name": "MongoDB",
-    "category": "Database"
-  },
-  {
-    "id": "ts21",
-    "name": "Supabase",
-    "category": "Database"
-  },
-  {
-    "id": "ts22",
-    "name": "Firebase",
-    "category": "Database"
-  }
-],
-  "projects": [
     {
+      "id": "ts1",
+      "name": "TypeScript",
+      "category": "Language"
+    },
+    {
+      "id": "ts2",
+      "name": "JavaScript",
+      "category": "Language"
+    },
+    {
+      "id": "ts3",
+      "name": "Python",
+      "category": "Language"
+    },
+    {
+      "id": "ts4",
+      "name": "C#",
+      "category": "Language"
+    },
+    {
+      "id": "ts5",
+      "name": "Kotlin",
+      "category": "Language"
+    },
+    {
+      "id": "ts6",
+      "name": "PHP",
+      "category": "Language"
+    },
+    {
+      "id": "ts7",
+      "name": "VBA",
+      "category": "Language"
+    },
+    {
+      "id": "ts8",
+      "name": "HTML5",
+      "category": "Frontend"
+    },
+    {
+      "id": "ts9",
+      "name": "CSS3",
+      "category": "Frontend"
+    },
+    {
+      "id": "ts10",
+      "name": "React",
+      "category": "Frontend"
+    },
+    {
+      "id": "ts11",
+      "name": "Next.js",
+      "category": "Frontend"
+    },
+    {
+      "id": "ts12",
+      "name": "Tailwind CSS",
+      "category": "Frontend"
+    },
+    {
+      "id": "ts13",
+      "name": "Node.js",
+      "category": "Backend"
+    },
+    {
+      "id": "ts14",
+      "name": "ASP.NET Core",
+      "category": "Backend"
+    },
+    {
+      "id": "ts15",
+      "name": "REST API",
+      "category": "Backend"
+    },
+    {
+      "id": "ts16",
+      "name": "Node-RED",
+      "category": "Backend"
+    },
+    {
+      "id": "ts17",
+      "name": "PostgreSQL",
+      "category": "Database"
+    },
+    {
+      "id": "ts18",
+      "name": "MSSQL",
+      "category": "Database"
+    },
+    {
+      "id": "ts19",
+      "name": "MySQL",
+      "category": "Database"
+    },
+    {
+      "id": "ts20",
+      "name": "MongoDB",
+      "category": "Database"
+    },
+    {
+      "id": "ts21",
+      "name": "Supabase",
+      "category": "Database"
+    },
+    {
+      "id": "ts22",
+      "name": "Firebase",
+      "category": "Database"
+    },
+    {
+      "id": "ts23",
+      "name": "WinForms",
+      "category": "Frontend"
+    },
+    {
+      "id": "ts24",
+      "name": "Flutter",
+      "category": "Frontend"
+    },
+    {
+      "id": "ts25",
+      "name": "Dart",
+      "category": "Language"
+    }
+  ],
+  "projects": [
+  {
     "id": "p1",
+    "title": "AKN — Official Artist Website",
+    "description": "A dynamic portfolio and web presence for music artist AKN featuring discography showcases, upcoming events, biographical highlights, and contact forms. Integrated with a secure Supabase admin dashboard that enables real-time content, track, and site configuration updates without code deployments.",
+    "techStack": [
+      "ts10",
+      "ts21"
+    ],
+    "liveUrl": "https://akn-artist-website.vercel.app/",
+    "githubUrl": "",
+    "images": [
+      "/uploads/akn_website/akn_home.png",
+      "/uploads/akn_website/akn_shows.png",
+      "/uploads/akn_website/akn_gallery.png",
+      "/uploads/akn_website/akn_videos.png",
+      "/uploads/akn_website/akn_about.png",
+      "/uploads/akn_website/akn_admin.png",
+      "/uploads/akn_website/akn_admingallery.png"
+    ],
+    "order": 1
+  },
+  {
+    "id": "p2",
+    "title": "MCF WMS Android",
+    "description": "An enterprise warehouse management application optimized for desktop and mobile workstations. Streamlines inventory tracking, stock movements, and logistics processing through integrated backend services.",
+    "techStack": [
+      "ts4",
+      "ts14",
+      "ts17",
+      "ts23"
+    ],
+    "liveUrl": "",
+    "githubUrl": "",
+    "images": [
+      "/uploads/mcf_wms_android/android_login.png",
+      "/uploads/mcf_wms_android/android_menu.png",
+      "/uploads/mcf_wms_android/android_settings.png",
+      "/uploads/mcf_wms_android/android_issuance.png",
+      "/uploads/mcf_wms_android/android_inventory.png"
+    ],
+    "order": 2
+  },
+  {
+    "id": "p3",
+    "title": "MCF WMS Handheld (Keyence BT-W85G)",
+    "description": "A handheld terminal application built on legacy framework infrastructure to manage on-the-floor warehouse transactions, streamline barcode scanning, and handle low-latency API sync for real-time inventory updates.",
+    "techStack": [
+      "ts17",
+      "ts24",
+      "ts25"
+    ],
+    "liveUrl": "",
+    "githubUrl": "",
+    "images": [
+      "/uploads/mcf_wms_handheld/handheld_login.png",
+      "/uploads/mcf_wms_handheld/handheld_menu.png",
+      "/uploads/mcf_wms_handheld/handheld_barcodemanagement.png",
+      "/uploads/mcf_wms_handheld/handheld_locatortagging.png",
+      "/uploads/mcf_wms_handheld/handheld_issuance.png"
+    ],
+    "order": 3
+  },
+  {
+    "id": "p4",
     "title": "Empathease — Web Platform",
     "description": "The web portal for Empathease providing mental health providers and users with a desktop-optimized booking workflow, provider schedules, support service directory management, and administrative control panels.",
     "techStack": [
@@ -142,8 +219,8 @@
       "ts13",
       "ts22"
     ],
-    "liveUrl": "https://example.com",
-    "githubUrl": "https://github.com",
+    "liveUrl": "",
+    "githubUrl": "",
     "images": [
       "/uploads/empathease/web_login.png",
       "/uploads/empathease/web_home_bic.png",
@@ -152,11 +229,11 @@
       "/uploads/empathease/web_support_service_list.png",
       "/uploads/empathease/web_booking.png"
     ],
-    "order": 1
+    "order": 4
   },
   {
-    "id": "p2",
-    "title": "Empathease — Mobile App",
+    "id": "p5",
+    "title": "Empathease — Android Application",
     "description": "A cross-platform mobile app connecting users directly with mental health professionals. Features appointment scheduling, secure real-time messaging, resource library access, an OpenAI FAQ chatbot, and a Python-powered machine learning questionnaire system for personalized therapist recommendations.",
     "techStack": [
       "ts5",
@@ -164,8 +241,8 @@
       "ts22",
       "ts3"
     ],
-    "liveUrl": "https://example.com",
-    "githubUrl": "https://github.com",
+    "liveUrl": "",
+    "githubUrl": "",
     "images": [
       "/uploads/empathease/android_landing.png",
       "/uploads/empathease/android_login.png",
@@ -173,7 +250,30 @@
       "/uploads/empathease/android_appointment.png",
       "/uploads/empathease/android_machine_learning_recommendations.png"
     ],
-    "order": 2
-  }
+    "order": 5
+  },
+  {
+  "id": "p6",
+  "title": "Eskwelabuy - Android Application",
+  "description": "A specialized mobile marketplace application tailored for students and educators to buy, sell, and exchange school supplies, textbooks, and academic materials seamlessly. Built with Kotlin on the frontend and a robust PHP Laravel RESTful API backend.",
+  "techStack": [
+    "ts5",
+    "ts6",
+    "ts19",
+    "ts26"
+  ],
+  "liveUrl": "",
+  "githubUrl": "",
+  "images": [
+    "/uploads/eskwelabuy/eskwelabuy_landing.png",
+    "/uploads/eskwelabuy/eskwelabuy_login.png",
+    "/uploads/eskwelabuy/eskwelabuy_dashboard.png",
+    "/uploads/eskwelabuy/eskwelabuy_orders.png",
+    "/uploads/eskwelabuy/eskwelabuy_profile.png",
+    "/uploads/eskwelabuy/eskwelabuy_sellerdashboard.png",
+    "/uploads/eskwelabuy/eskwelabuy_notifications.png"
+  ],
+  "order": 6
+}
 ]
 }

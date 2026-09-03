@@ -29,10 +29,18 @@ function SocialIcon({ label }: { label: string }) {
     );
   }
 
-  // Fallback icon for other links
   return (
     <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+    </svg>
+  );
+}
+
+// PDF Icon SVG Component
+function PdfIcon() {
+  return (
+    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9.5v-2H8v2H6.5V8H9c.83 0 1.5.67 1.5 1.5v2c0 .83-.67 1.5-1.5 1.5h-.5v1H11v2zm-.5-5H8V9.5h1.5V11zM17.5 9.5c0-.83-.67-1.5-1.5-1.5H13v8h1.5v-3H16c.83 0 1.5-.67 1.5-1.5v-2zm-3 2V9.5H16V11.5h-1.5z" />
     </svg>
   );
 }
@@ -45,84 +53,87 @@ export default function Hero({
   techStacks: TechStackItem[];
 }) {
   return (
-    <section id="intro" className="scroll-mt-10 py-20 lg:py-28 border-b border-line">
-      <div className="max-w-3xl px-6 lg:px-16">
-        <div className="flex items-center gap-4 mb-6">
-          {profile.avatar && (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              src={profile.avatar}
-              alt={profile.name}
-              className="h-14 w-14 object-cover border border-line"
-            />
-          )}
-          <p className="font-mono text-[13px] text-ink-soft">
-            {"//"} {profile.location || "location unset"}
-            <span className="code-punct">,</span> <span className="code-string">available for work</span>
-          </p>
+    <section id="intro" className="relative overflow-hidden scroll-mt-10 py-20 lg:py-28 border-b border-line">
+      {/* Low-Opacity Background Image Layer */}
+      <div 
+        className="absolute inset-0 pointer-events-none opacity-[0.04] bg-cover bg-center bg-no-repeat dark:invert"
+        style={{
+          backgroundImage: "url('/hero-bg.png')",
+          maskImage: "radial-gradient(circle at center, black 40%, transparent 80%)",
+          WebkitMaskImage: "radial-gradient(circle at center, black 40%, transparent 80%)",
+        }}
+      />
+
+      {/* Main Content */}
+      <div className="relative z-10">
+        <div className="max-w-5xl px-6 lg:px-16 flex flex-col md:flex-row md:items-start md:justify-between gap-10">
+          <div className="max-w-2xl flex-1">
+            <p className="font-mono text-[13px] text-ink-soft mb-6">
+              {"//"} {profile.location || "location unset"}
+              <span className="code-punct">,</span> <span className="code-string">available for work</span>
+            </p>
+
+            <h1 className="font-display font-semibold text-[2.25rem] leading-[1.15] sm:text-5xl sm:leading-[1.1]">
+              {profile.name}
+            </h1>
+            <p className="mt-2 font-mono text-base sm:text-lg text-blue">{profile.role}</p>
+
+            <p className="mt-8 text-lg leading-relaxed text-ink">
+              {profile.tagline}
+            </p>
+
+            <p className="mt-5 leading-relaxed text-[15px] text-ink-soft">
+              {profile.bio}
+            </p>
+          </div>
         </div>
 
-        <h1 className="font-display font-semibold text-[2.25rem] leading-[1.15] sm:text-5xl sm:leading-[1.1]">
-          {profile.name}
-        </h1>
-        <p className="mt-2 font-mono text-base sm:text-lg text-blue">{profile.role}</p>
+        <div className="mt-8 w-full">
+          <TechStackMarquee items={techStacks} />
+        </div>
 
-        <p className="mt-8 text-lg leading-relaxed max-w-xl text-ink">
-          {profile.tagline}
-        </p>
+        <div className="max-w-5xl px-6 lg:px-16">
+          <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 font-mono text-[13px]">
+            {/* Email with mail icon */}
+            {profile.email && (
+              <a
+                href={`mailto:${profile.email}`}
+                className="inline-flex items-center gap-1.5 border-b border-ink pb-0.5 hover:text-blue hover:border-blue transition-colors"
+              >
+                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                </svg>
+                <span>{profile.email}</span>
+              </a>
+            )}
 
-        <p className="mt-5 leading-relaxed max-w-xl text-[15px] text-ink-soft">
-          {profile.bio}
-        </p>
-      </div>
+            {/* Social Links with icons */}
+            {profile.socials?.map((s) => (
+              <a
+                key={s.label}
+                href={s.url}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-1.5 text-ink-soft hover:text-blue transition-colors"
+              >
+                <SocialIcon label={s.label} />
+                <span>{s.label}</span>
+              </a>
+            ))}
 
-      <div className="mt-8 w-full">
-        <TechStackMarquee items={techStacks} />
-      </div>
-
-      <div className="max-w-3xl px-6 lg:px-16">
-        <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 font-mono text-[13px]">
-          {/* Email with mail icon */}
-          {profile.email && (
-            <a
-              href={`mailto:${profile.email}`}
-              className="inline-flex items-center gap-1.5 border-b border-ink pb-0.5 hover:text-blue hover:border-blue transition-colors"
-            >
-              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-              </svg>
-              <span>{profile.email}</span>
-            </a>
-          )}
-
-          {/* Social Links with icons */}
-          {profile.socials?.map((s) => (
-            <a
-              key={s.label}
-              href={s.url}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-1.5 text-ink-soft hover:text-blue transition-colors"
-            >
-              <SocialIcon label={s.label} />
-              <span>{s.label}</span>
-            </a>
-          ))}
-
-          {/* Résumé with document icon */}
-          {profile.resumeUrl && (
-            <a
-              href={profile.resumeUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-1.5 text-ink-soft hover:text-blue transition-colors"
-            >
-              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-              </svg>
-              <span>Résumé</span>
-            </a>
-          )}
+            {/* Résumé link handling open/save PDF */}
+            {profile.resumeUrl && (
+              <a
+                href={profile.resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-ink-soft hover:text-blue transition-colors"
+              >
+                <PdfIcon />
+                <span>Résumé</span>
+              </a>
+            )}
+          </div>
         </div>
       </div>
     </section>
