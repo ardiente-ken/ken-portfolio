@@ -6,7 +6,6 @@ import type { Database } from "@/lib/types";
 import ProfileEditor from "./ProfileEditor";
 import TechStackEditor from "./TechStackEditor";
 import ProjectsEditor from "./ProjectsEditor";
-import ThemeToggle from "@/components/site/ThemeToggle";
 
 type Tab = "profile" | "stack" | "projects";
 
@@ -41,7 +40,6 @@ export default function Dashboard({ initialData }: { initialData: Database }) {
           <button onClick={handleLogout} className="text-ink-soft hover:text-rust transition-colors">
             Log out
           </button>
-          <ThemeToggle />
         </div>
       </header>
 
