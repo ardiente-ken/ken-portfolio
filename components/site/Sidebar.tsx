@@ -5,8 +5,7 @@ import ThemeToggle from "./ThemeToggle";
 
 const SECTIONS = [
   { id: "intro", label: "Intro", num: "01" },
-  { id: "stack", label: "Stack", num: "02" },
-  { id: "projects", label: "Projects", num: "03" },
+  { id: "projects", label: "Projects", num: "02" },
 ];
 
 export default function Sidebar({ name }: { name: string }) {

@@ -16,135 +16,164 @@
       {
         "label": "LinkedIn",
         "url": "https://www.linkedin.com/in/ken-angelo-ardiente-1b20a2298"
-      },
-      {
-        "label": "Instagram",
-        "url": "https://instagram.com/_angeloken"
       }
     ]
   },
   "techStacks": [
-    {
-      "id": "ts1",
-      "name": "TypeScript",
-      "category": "Language",
-      "level": 90
-    },
-    {
-      "id": "ts2",
-      "name": "JavaScript",
-      "category": "Language",
-      "level": 95
-    },
-    {
-      "id": "ts3",
-      "name": "Python",
-      "category": "Language",
-      "level": 75
-    },
-    {
-      "id": "ts4",
-      "name": "React",
-      "category": "Frontend",
-      "level": 92
-    },
-    {
-      "id": "ts5",
-      "name": "Next.js",
-      "category": "Frontend",
-      "level": 90
-    },
-    {
-      "id": "ts6",
-      "name": "Tailwind CSS",
-      "category": "Frontend",
-      "level": 88
-    },
-    {
-      "id": "ts7",
-      "name": "Node.js",
-      "category": "Backend",
-      "level": 88
-    },
-    {
-      "id": "ts8",
-      "name": "PostgreSQL",
-      "category": "Database",
-      "level": 80
-    },
-    {
-      "id": "ts9",
-      "name": "Docker",
-      "category": "DevOps",
-      "level": 70
-    },
-    {
-      "id": "ts10",
-      "name": "AWS",
-      "category": "DevOps",
-      "level": 65
-    },
-    {
-      "id": "ts11",
-      "name": "GraphQL",
-      "category": "Backend",
-      "level": 72
-    },
-    {
-      "id": "ts12",
-      "name": "Figma",
-      "category": "Design",
-      "level": 60
-    }
-  ],
+  {
+    "id": "ts1",
+    "name": "TypeScript",
+    "category": "Language"
+  },
+  {
+    "id": "ts2",
+    "name": "JavaScript",
+    "category": "Language"
+  },
+  {
+    "id": "ts3",
+    "name": "Python",
+    "category": "Language"
+  },
+  {
+    "id": "ts4",
+    "name": "C#",
+    "category": "Language"
+  },
+  {
+    "id": "ts5",
+    "name": "Kotlin",
+    "category": "Language"
+  },
+  {
+    "id": "ts6",
+    "name": "PHP",
+    "category": "Language"
+  },
+  {
+    "id": "ts7",
+    "name": "VBA",
+    "category": "Language"
+  },
+  {
+    "id": "ts8",
+    "name": "HTML5",
+    "category": "Frontend"
+  },
+  {
+    "id": "ts9",
+    "name": "CSS3",
+    "category": "Frontend"
+  },
+  {
+    "id": "ts10",
+    "name": "React",
+    "category": "Frontend"
+  },
+  {
+    "id": "ts11",
+    "name": "Next.js",
+    "category": "Frontend"
+  },
+  {
+    "id": "ts12",
+    "name": "Tailwind CSS",
+    "category": "Frontend"
+  },
+  {
+    "id": "ts13",
+    "name": "Node.js",
+    "category": "Backend"
+  },
+  {
+    "id": "ts14",
+    "name": "ASP.NET Core",
+    "category": "Backend"
+  },
+  {
+    "id": "ts15",
+    "name": "REST API",
+    "category": "Backend"
+  },
+  {
+    "id": "ts16",
+    "name": "Node-RED",
+    "category": "Backend"
+  },
+  {
+    "id": "ts17",
+    "name": "PostgreSQL",
+    "category": "Database"
+  },
+  {
+    "id": "ts18",
+    "name": "MSSQL",
+    "category": "Database"
+  },
+  {
+    "id": "ts19",
+    "name": "MySQL",
+    "category": "Database"
+  },
+  {
+    "id": "ts20",
+    "name": "MongoDB",
+    "category": "Database"
+  },
+  {
+    "id": "ts21",
+    "name": "Supabase",
+    "category": "Database"
+  },
+  {
+    "id": "ts22",
+    "name": "Firebase",
+    "category": "Database"
+  }
+],
   "projects": [
     {
-      "id": "p1",
-      "title": "Orbit \u2014 Team Task Manager",
-      "description": "A Kanban-style project management tool with real-time updates, drag-and-drop boards, and per-project analytics. Built to explore optimistic UI patterns and WebSocket state sync at scale.",
-      "techStack": [
-        "ts1",
-        "ts4",
-        "ts5",
-        "ts7",
-        "ts8"
-      ],
-      "liveUrl": "https://example.com",
-      "githubUrl": "https://github.com",
-      "images": [],
-      "order": 1
-    },
-    {
-      "id": "p2",
-      "title": "Ledger \u2014 Personal Finance Tracker",
-      "description": "A privacy-first budgeting app that categorizes transactions automatically and visualizes spending trends. Includes a rules engine for recurring transactions and CSV bank imports.",
-      "techStack": [
-        "ts1",
-        "ts4",
-        "ts5",
-        "ts6",
-        "ts8"
-      ],
-      "liveUrl": "https://example.com",
-      "githubUrl": "https://github.com",
-      "images": [],
-      "order": 2
-    },
-    {
-      "id": "p3",
-      "title": "Signal \u2014 API Uptime Monitor",
-      "description": "A lightweight uptime and latency monitor for internal APIs, with Slack alerting and a public status page generator, deployed via containers behind a load balancer.",
-      "techStack": [
-        "ts2",
-        "ts7",
-        "ts9",
-        "ts10",
-        "ts11"
-      ],
-      "liveUrl": "https://example.com",
-      "githubUrl": "https://github.com",
-      "images": [],
-      "order": 3
-    }
-  ]
+    "id": "p1",
+    "title": "Empathease — Web Platform",
+    "description": "The web portal for Empathease providing mental health providers and users with a desktop-optimized booking workflow, provider schedules, support service directory management, and administrative control panels.",
+    "techStack": [
+      "ts10",
+      "ts12",
+      "ts13",
+      "ts22"
+    ],
+    "liveUrl": "https://example.com",
+    "githubUrl": "https://github.com",
+    "images": [
+      "/uploads/empathease/web_login.png",
+      "/uploads/empathease/web_home_bic.png",
+      "/uploads/empathease/web_mhsc_providers.png",
+      "/uploads/empathease/web_professional.png",
+      "/uploads/empathease/web_support_service_list.png",
+      "/uploads/empathease/web_booking.png"
+    ],
+    "order": 1
+  },
+  {
+    "id": "p2",
+    "title": "Empathease — Mobile App",
+    "description": "A cross-platform mobile app connecting users directly with mental health professionals. Features appointment scheduling, secure real-time messaging, resource library access, an OpenAI FAQ chatbot, and a Python-powered machine learning questionnaire system for personalized therapist recommendations.",
+    "techStack": [
+      "ts5",
+      "ts13",
+      "ts22",
+      "ts3"
+    ],
+    "liveUrl": "https://example.com",
+    "githubUrl": "https://github.com",
+    "images": [
+      "/uploads/empathease/android_landing.png",
+      "/uploads/empathease/android_login.png",
+      "/uploads/empathease/android_home.png",
+      "/uploads/empathease/android_appointment.png",
+      "/uploads/empathease/android_machine_learning_recommendations.png"
+    ],
+    "order": 2
+  }
+]
 }

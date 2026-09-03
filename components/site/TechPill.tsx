@@ -10,7 +10,7 @@ function getIconUrl(name: string) {
 export default function TechPill({ item }: { item: TechStackItem }) {
   return (
     <div
-      title={`${item.name} • ${item.category} (${item.level}%)`}
+      title={`${item.name} • ${item.category}`}
       className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-line/60 bg-paper-raised/50 text-xs font-mono shrink-0 hover:border-ink-soft hover:bg-paper-raised transition-colors"
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -23,7 +23,6 @@ export default function TechPill({ item }: { item: TechStackItem }) {
         }}
       />
       <span className="text-ink text-[12px]">{item.name}</span>
-      <span className="text-[10px] text-ink-soft">{item.level}%</span>
     </div>
   );
 }
