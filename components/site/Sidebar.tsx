@@ -67,7 +67,6 @@ export default function Sidebar({ name }: { name: string }) {
 
       <div className="hidden lg:flex items-center justify-between">
         <p className="font-mono text-[11px] text-ink-soft">rev. {new Date().getFullYear()}</p>
-        <ThemeToggle />
       </div>
     </aside>
   );
