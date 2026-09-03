@@ -1,0 +1,150 @@
+{
+  "profile": {
+    "name": "Ken Angelo Ardiente",
+    "role": "Full-Stack Developer",
+    "tagline": "I build fast, reliable software from database to pixel.",
+    "bio": "I'm a full-stack developer who likes taking a product from a rough sketch to something people actually use. Most of my work lives at the intersection of clean APIs and interfaces that don't get in the way. When I'm not shipping features, I'm probably reading about distributed systems or tinkering with a side project that will never see daylight.",
+    "location": "Cebu City, Philippines",
+    "email": "kenangeloardiente@gmail.com",
+    "avatar": "",
+    "resumeUrl": "",
+    "socials": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/ardiente-ken"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/ken-angelo-ardiente-1b20a2298"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://instagram.com/_angeloken"
+      }
+    ]
+  },
+  "techStacks": [
+    {
+      "id": "ts1",
+      "name": "TypeScript",
+      "category": "Language",
+      "level": 90
+    },
+    {
+      "id": "ts2",
+      "name": "JavaScript",
+      "category": "Language",
+      "level": 95
+    },
+    {
+      "id": "ts3",
+      "name": "Python",
+      "category": "Language",
+      "level": 75
+    },
+    {
+      "id": "ts4",
+      "name": "React",
+      "category": "Frontend",
+      "level": 92
+    },
+    {
+      "id": "ts5",
+      "name": "Next.js",
+      "category": "Frontend",
+      "level": 90
+    },
+    {
+      "id": "ts6",
+      "name": "Tailwind CSS",
+      "category": "Frontend",
+      "level": 88
+    },
+    {
+      "id": "ts7",
+      "name": "Node.js",
+      "category": "Backend",
+      "level": 88
+    },
+    {
+      "id": "ts8",
+      "name": "PostgreSQL",
+      "category": "Database",
+      "level": 80
+    },
+    {
+      "id": "ts9",
+      "name": "Docker",
+      "category": "DevOps",
+      "level": 70
+    },
+    {
+      "id": "ts10",
+      "name": "AWS",
+      "category": "DevOps",
+      "level": 65
+    },
+    {
+      "id": "ts11",
+      "name": "GraphQL",
+      "category": "Backend",
+      "level": 72
+    },
+    {
+      "id": "ts12",
+      "name": "Figma",
+      "category": "Design",
+      "level": 60
+    }
+  ],
+  "projects": [
+    {
+      "id": "p1",
+      "title": "Orbit \u2014 Team Task Manager",
+      "description": "A Kanban-style project management tool with real-time updates, drag-and-drop boards, and per-project analytics. Built to explore optimistic UI patterns and WebSocket state sync at scale.",
+      "techStack": [
+        "ts1",
+        "ts4",
+        "ts5",
+        "ts7",
+        "ts8"
+      ],
+      "liveUrl": "https://example.com",
+      "githubUrl": "https://github.com",
+      "images": [],
+      "order": 1
+    },
+    {
+      "id": "p2",
+      "title": "Ledger \u2014 Personal Finance Tracker",
+      "description": "A privacy-first budgeting app that categorizes transactions automatically and visualizes spending trends. Includes a rules engine for recurring transactions and CSV bank imports.",
+      "techStack": [
+        "ts1",
+        "ts4",
+        "ts5",
+        "ts6",
+        "ts8"
+      ],
+      "liveUrl": "https://example.com",
+      "githubUrl": "https://github.com",
+      "images": [],
+      "order": 2
+    },
+    {
+      "id": "p3",
+      "title": "Signal \u2014 API Uptime Monitor",
+      "description": "A lightweight uptime and latency monitor for internal APIs, with Slack alerting and a public status page generator, deployed via containers behind a load balancer.",
+      "techStack": [
+        "ts2",
+        "ts7",
+        "ts9",
+        "ts10",
+        "ts11"
+      ],
+      "liveUrl": "https://example.com",
+      "githubUrl": "https://github.com",
+      "images": [],
+      "order": 3
+    }
+  ]
+}
