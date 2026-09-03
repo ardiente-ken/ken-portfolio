@@ -171,7 +171,7 @@
   {
     "id": "p2",
     "title": "MCF WMS Android",
-    "description": "An enterprise warehouse management application optimized for desktop and mobile workstations. Streamlines inventory tracking, stock movements, and logistics processing through integrated backend services.",
+    "description": "An enterprise warehouse management application optimized for mobile workstations. Streamlines inventory tracking, stock movements, and logistics processing through integrated backend services.",
     "techStack": [
       "ts4",
       "ts14",

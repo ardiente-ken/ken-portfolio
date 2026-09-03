@@ -16,9 +16,6 @@ export default function Home() {
         <Projects projects={db.projects} techStacks={db.techStacks} />
         <footer className="px-6 lg:px-16 py-10 flex items-center justify-between font-mono text-[11px] text-ink-soft">
           <span>&copy; {new Date().getFullYear()} {db.profile.name}</span>
-          <a href="/admin" className="hover:text-blue transition-colors">
-            admin
-          </a>
         </footer>
       </main>
     </div>
