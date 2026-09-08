@@ -45,6 +45,63 @@ function PdfIcon() {
   );
 }
 
+// Floating "business card" — random facts rendered as a code block
+function AboutMeCard({ profile }: { profile: Profile }) {
+  return (
+    <div className="relative hidden md:block shrink-0 w-[300px] lg:w-[320px] mr-2 lg:mr-8">
+      {/* stacked cards behind, for the "deck of cards" depth */}
+      <div className="absolute inset-0 rounded-xl border border-line bg-ink/[0.03] rotate-[6deg] translate-x-2 translate-y-3" />
+      <div className="absolute inset-0 rounded-xl border border-line bg-ink/[0.05] rotate-[3deg] translate-x-1 translate-y-1.5" />
+
+      {/* the card itself */}
+      <div className="relative rounded-xl bg-[#0d1117] border border-white/10 shadow-xl shadow-black/20 px-5 py-5 -rotate-2 hover:rotate-0 transition-transform duration-500 font-mono text-[12.5px] leading-[1.7]">
+        <p>
+          <span className="text-[#c586c0]">function</span>{" "}
+          <span className="text-[#dcdcaa]">randomFacts</span>() {"{"}
+        </p>
+        <p className="pl-4">
+          <span className="text-[#569cd6]">var</span>{" "}
+          <span className="text-white/80">name</span> ={" "}
+          <span className="text-[#ce9178]">"{profile.name}"</span>;
+        </p>
+        <p className="pl-4">
+          <span className="text-[#569cd6]">var</span>{" "}
+          <span className="text-white/80">title</span> ={" "}
+          <span className="text-[#ce9178]">"{profile.role}"</span>;
+        </p>
+        <p className="pl-4">
+          <span className="text-[#569cd6]">var</span>{" "}
+          <span className="text-white/80">based_in</span> ={" "}
+          <span className="text-[#ce9178]">"{profile.location || "somewhere with wifi"}"</span>;
+        </p>
+        <p className="pl-4">
+          <span className="text-[#569cd6]">var</span>{" "}
+          <span className="text-white/80">coffee_per_day</span> ={" "}
+          <span className="text-[#b5cea8]">3</span>;
+        </p>
+        <p className="pl-4">
+          <span className="text-[#569cd6]">var</span>{" "}
+          <span className="text-white/80">currently_debugging</span> ={" "}
+          <span className="text-[#ce9178]">"yeah unfortunately xD"</span>;
+        </p>
+        <p className="pl-4">
+          <span className="text-[#569cd6]">var</span>{" "}
+          <span className="text-white/80">will_reply</span> ={" "}
+          <span className="text-[#569cd6]">true</span>;
+        </p>
+        <p>{"}"}</p>
+        <p className="mt-1">
+          <span className="text-[#dcdcaa]">randomFacts</span>();
+        </p>
+
+        <div className="mt-4 pt-3 border-t border-white/10 text-right text-[11px] tracking-wide text-white/40">
+          {profile.name?.toLowerCase().replace(/\s+/g, "")}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function Hero({
   profile,
   techStacks,
@@ -64,9 +121,15 @@ export default function Hero({
         }}
       />
 
+      {/* Floating code-card, pinned to the right edge of the page */}
+{/* Floating code-card, pinned to the right edge of the page */}
+<div className="hidden lg:block absolute top-16 lg:top-20 right-6 xl:right-14 2xl:right-24 z-10">
+  <AboutMeCard profile={profile} />
+</div>
+
       {/* Main Content */}
       <div className="relative z-10">
-        <div className="max-w-5xl px-6 lg:px-16 flex flex-col md:flex-row md:items-start md:justify-between gap-10">
+        <div className="max-w-5xl px-6 lg:px-16 flex flex-col">
           <div className="max-w-2xl flex-1">
             <p className="font-mono text-[13px] text-ink-soft mb-6">
               {"//"} {profile.location || "location unset"}
@@ -88,15 +151,15 @@ export default function Hero({
           </div>
         </div>
 
-        <div className="mt-8 w-full">
-          <TechStackMarquee items={techStacks} />
-        </div>
+<div className="mt-16 lg:mt-20 w-full">
+  <TechStackMarquee items={techStacks} />
+</div>
 
         <div className="max-w-5xl px-6 lg:px-16">
           <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4 font-mono text-[13px]">
             {/* Email with mail icon */}
             {profile.email && (
-              <a
+             <a 
                 href={`mailto:${profile.email}`}
                 className="inline-flex items-center gap-1.5 border-b border-ink pb-0.5 hover:text-blue hover:border-blue transition-colors"
               >
