@@ -169,6 +169,28 @@
       "order": 1
     },
     {
+      "id": "p8",
+      "title": "AKN Gigs — Live Setlist & Song Requests",
+      "description": "A full-stack companion app for independent artist AKN's live shows. Audiences browse and search the setlist and send song requests from their phones, with an optional GCash tip. A private performer mode delivers lyrics, chords, swipe navigation, and real-time request notifications, with cached songs for unreliable venue connections. Includes a Supabase-authenticated admin for managing songs, with Row Level Security.",
+      "techStack": [
+        "ts1",
+        "ts10",
+        "ts17",
+        "ts21"
+      ],
+      "liveUrl": "https://akn-live-setlist.vercel.app/",
+      "githubUrl": "",
+      "images": [
+        "/uploads/akn_setlist/home.jpg",
+        "/uploads/akn_setlist/setlist.jpg",
+        "/uploads/akn_setlist/performance_setlist.jpg",
+        "/uploads/akn_setlist/performance_song.jpg",
+        "/uploads/akn_setlist/admin.jpg",
+        "/uploads/akn_setlist/add_edit_song.jpg"
+      ],
+      "order": 2
+    },
+    {
       "id": "p2",
       "title": "MCF WMS Android",
       "description": "An enterprise warehouse management application optimized for mobile workstations. Streamlines inventory tracking, stock movements, and logistics processing through integrated backend services.",
@@ -187,7 +209,7 @@
         "/uploads/mcf_wms_android/android_issuance.png",
         "/uploads/mcf_wms_android/android_inventory.png"
       ],
-      "order": 2
+      "order": 3
     },
     {
       "id": "p3",
@@ -207,7 +229,7 @@
         "/uploads/mcf_wms_handheld/handheld_locatortagging.png",
         "/uploads/mcf_wms_handheld/handheld_issuance.png"
       ],
-      "order": 3
+      "order": 4
     },
     {
       "id": "p4",
@@ -229,7 +251,7 @@
         "/uploads/empathease/web_support_service_list.png",
         "/uploads/empathease/web_booking.png"
       ],
-      "order": 4
+      "order": 5
     },
     {
       "id": "p5",
@@ -250,7 +272,7 @@
         "/uploads/empathease/android_appointment.png",
         "/uploads/empathease/android_machine_learning_recommendations.png"
       ],
-      "order": 5
+      "order": 6
     },
     {
       "id": "p6",
@@ -272,7 +294,7 @@
         "/uploads/eskwelabuy/eskwelabuy_sellerdashboard.png",
         "/uploads/eskwelabuy/eskwelabuy_notifications.png"
       ],
-      "order": 6
+      "order": 7
     },
     {
       "id": "p7",
@@ -292,7 +314,7 @@
         "/uploads/itinerawise/itinerawise_maps.png",
         "/uploads/itinerawise/itinerawise_itinerary.png"
       ],
-      "order": 7
+      "order": 8
     }
   ],
   "experiences": [
